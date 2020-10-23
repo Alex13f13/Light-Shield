@@ -6,21 +6,34 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
 	private Transform target;
-    private int wavepointIndex = 0;
+	private int wavepointIndex = 0;
 
 	private Enemy enemy;
 
-    void Start()
+	public Transform EnemyRotate;
+
+	void Start()
     {
 		enemy = GetComponent<Enemy>();
 
-        target = WayPoints.Waypoints[0];
-    }
+		if (enemy.gameObject.tag == "EnemyFly")
+		{
+			target = WayPointsFly.Waypoints[0];
+		}
+		else
+		{
+			target = WayPoints.Waypoints[0];
+		}
+	}
 
 	void Update()
 	{
-		Vector3 dir = target.position - transform.position;
+		Vector3 dir;
+		dir = target.position - transform.position;
 		transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
+		Quaternion lookRotation = Quaternion.LookRotation(dir);
+		Vector3 rotation = Quaternion.Lerp(EnemyRotate.rotation, lookRotation, Time.deltaTime * 10f).eulerAngles;
+		EnemyRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
 
 		if (Vector3.Distance(transform.position, target.position) <= 0.4f)
 		{
@@ -41,7 +54,15 @@ public class EnemyMovement : MonoBehaviour
 		}
 
 		wavepointIndex++;
-		target = WayPoints.Waypoints[wavepointIndex];
+		
+		if (enemy.gameObject.tag == "EnemyFly")
+		{
+			target = WayPointsFly.Waypoints[wavepointIndex];
+		}
+		else
+		{
+			target = WayPoints.Waypoints[wavepointIndex];
+		}
 	}
 
 	void EndPath()

@@ -113,10 +113,12 @@ public class Tower : MonoBehaviour
 	void LookOnTarget()
 	{
 		//Rotación de la torreta para apuntar al enemigo
+
 		Vector3 dir = target.position - transform.position;
 		Quaternion lookRotation = Quaternion.LookRotation(dir);
 		Vector3 rotation = Quaternion.Lerp(partRotate.rotation, lookRotation, Time.deltaTime * rotateSpeed).eulerAngles;
 		partRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+		
 	}
 
 	void Laser()
