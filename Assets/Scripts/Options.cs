@@ -16,20 +16,14 @@ public class Options : MonoBehaviour
     public RenderPipelineAsset[] AssetsPipeLine;
     public GameObject Graphics;
 
+    public GameObject MusicToDestroy;
+
     #region Funciones
-
-    public void bot1()
-    {
-        
-    }
-
-    public void bot2()
-    {
-        
-    }
 
     public void Exit()
     {
+        MusicToDestroy = GameObject.Find("Music");
+        Destroy(MusicToDestroy);
         fundido.FadeTo(LeveltoLoad);
     }
 

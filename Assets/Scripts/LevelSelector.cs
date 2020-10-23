@@ -8,6 +8,8 @@ public class LevelSelector : MonoBehaviour
 
     public Button[] levelbuttons;
 
+    public GameObject MusicToDestroy;
+
     void Start()
     {
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);
@@ -30,6 +32,8 @@ public class LevelSelector : MonoBehaviour
 
     public void Select(string levelName)
 	{
+        MusicToDestroy = GameObject.Find("Music");
+        Destroy(MusicToDestroy);
         fundido.FadeTo(levelName);
 	}
 

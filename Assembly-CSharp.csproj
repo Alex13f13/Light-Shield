@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{689D9C60-2577-4B28-C05E-EFF5B7059F6B}</ProjectGuid>
+    <ProjectGuid>{90A5944D-CC1D-C14B-C0D7-F9A89A125AA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Fundido.cs" />
@@ -89,58 +90,58 @@
     <Compile Include="Assets\Scripts\WayPoints.cs" />
     <Compile Include="Assets\Scripts\Win.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/Tower Defense/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
