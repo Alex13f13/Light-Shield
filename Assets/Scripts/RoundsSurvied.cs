@@ -5,18 +5,7 @@ using UnityEngine.UI;
 
 public class RoundsSurvied : MonoBehaviour
 {
-    public Text roundsText;
-
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    public Text ScoreText;
 
     #region Funciones
 
@@ -27,15 +16,16 @@ public class RoundsSurvied : MonoBehaviour
 
     IEnumerator AnimatedText()
 	{
-        roundsText.text = "0";
-        int round = 0;
-        yield return new WaitForSeconds(0.7f);
-		while (round < PlayerStats.Rounds)
+        ScoreText.text = "0";
+        int score = PlayerStats.Score;
+        yield return new WaitForSecondsRealtime(0.7f);
+        score = score - 50;
+        while (score < PlayerStats.Score)
 		{
-            round++;
-            roundsText.text = round.ToString();
-            yield return new WaitForSeconds(0.05f);
-		}
+            score++;
+            ScoreText.text = score.ToString();
+            yield return new WaitForSecondsRealtime(0.01f);
+        }
 	}
 
     #endregion

@@ -210,7 +210,8 @@ MonoBehaviour:
   Startspeed: 7
   speed: 10
   GiveMoney: 30
-  Starthealth: 500
+  GiveScore: 375
+  Starthealth: 250
   DeathEffect: {fileID: 7539603234813088958, guid: 1a867c15b3319c64c82b39c0af71db05,
     type: 3}
   healthbar: {fileID: 8755744758017406087}
