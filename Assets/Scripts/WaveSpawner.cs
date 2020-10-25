@@ -6,8 +6,6 @@ public class WaveSpawner : MonoBehaviour
 {
     public static int EnemiesAlive = 0;
 
-    public int VamohaVer;
-
     public Wave[] waves;
  
     public Transform SpawnPoint;
@@ -28,8 +26,6 @@ public class WaveSpawner : MonoBehaviour
 
 	void Update()
     {        
-        VamohaVer = EnemiesAlive;
-
         if (EnemiesAlive > 0)
 		{
             return;
@@ -59,15 +55,17 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
 	{
-        PlayerStats.Rounds++;
+        //PlayerStats.Rounds++;
 
         Wave wave = waves[WaveIndex];
 
         EnemiesAlive = wave.count;
+        
 
         for (int i = 0; i < wave.count; i++)
 		{
-            SpawnEnemy(wave.enemy);
+            int RandomNumber = Random.Range(0, wave.enemy.Length);
+            SpawnEnemy(wave.enemy[RandomNumber]);
             yield return new WaitForSeconds(1f / wave.rateToNextEnemy);
         }
         

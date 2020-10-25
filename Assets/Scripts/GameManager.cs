@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
     {
         if (GameOverCheck)
 		{
-            Debug.Log("Game Over");
             return;
 		}
 
@@ -41,13 +40,14 @@ public class GameManager : MonoBehaviour
 
     void EndGame()
 	{
-        GameOverCheck = true;
+        GameOverCheck = true;        
         GameOverUI.GetComponent<GameOver>().StopTime();
     }
 
     public void WinLevel()
 	{
         GameOverCheck = true;
+        PlayerStats.Score += PlayerStats.Money;
         WinUI.SetActive(true);
         PlayerPrefs.SetInt("levelReached", levelUnlocked);
     }

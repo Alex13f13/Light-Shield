@@ -211,6 +211,7 @@ MonoBehaviour:
   Startspeed: 7
   speed: 10
   GiveMoney: 75
+  GiveScore: 200
   Starthealth: 350
   DeathEffect: {fileID: 7539603234813088958, guid: f610a5e8deca4074080423b8bbd7f15f,
     type: 3}
