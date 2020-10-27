@@ -6,7 +6,6 @@ public class Shop : MonoBehaviour
 
     BuildManager buildManager;
 
-
     void Start()
     {
         buildManager = BuildManager.instance;

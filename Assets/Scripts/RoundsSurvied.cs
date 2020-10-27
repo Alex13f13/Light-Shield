@@ -19,7 +19,10 @@ public class RoundsSurvied : MonoBehaviour
         ScoreText.text = "0";
         int score = PlayerStats.Score;
         yield return new WaitForSecondsRealtime(0.7f);
-        score = score - 50;
+        if(PlayerStats.Score >= 50)
+		{
+            score = score - 50;
+        }        
         while (score < PlayerStats.Score)
 		{
             score++;

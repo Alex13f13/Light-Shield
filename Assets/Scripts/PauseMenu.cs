@@ -15,6 +15,10 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+		if (GameManager.GameOverCheck)
+		{
+            return;
+		}
 		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
 		{
             Continue();
