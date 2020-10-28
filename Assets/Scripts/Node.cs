@@ -9,7 +9,6 @@ using UnityEngine.Timeline;
 public class Node : MonoBehaviour
 {
 	public Material hoverColor, notMoneyColor;
-	//public GameObject LightActivate;
 
 	[HideInInspector]
 	public GameObject turret;
@@ -68,10 +67,6 @@ public class Node : MonoBehaviour
 			return;
 
 		BuildTower(buildManager.GetTurretSelected());
-
-		////Construimos la torreta
-		//GameObject turretToBuild = buildManager.GetTurretSelected();
-		//turret = (GameObject)Instantiate(turretToBuild, transform.position + new Vector3 (0f,0.5f,0f), transform.rotation);
 	}
 
 	void BuildTower(TurretBlueprint blueprint)
@@ -91,8 +86,6 @@ public class Node : MonoBehaviour
 
 		GameObject effect = Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
 		Destroy(effect, 4f);
-
-		Debug.Log("Turret build! Money: ");
 	}
 
 	public void UpgradeTower()
@@ -116,8 +109,6 @@ public class Node : MonoBehaviour
 		Destroy(effect, 4f);
 
 		isUpgraded = true;
-
-		Debug.Log("Turret Upgraded");
 	}
 
 	public void SellTurret()
@@ -140,7 +131,6 @@ public class Node : MonoBehaviour
 		if (!buildManager.CanBuild)
 			return;
 
-		//LightActivate.SetActive(true);
 		if (buildManager.HasMoney)
 		{
 			rend.material = hoverColor;
@@ -155,6 +145,5 @@ public class Node : MonoBehaviour
 	void OnMouseExit()
 	{
 		rend.material = StartColor;
-		//LightActivate.SetActive(false);
 	}
 }

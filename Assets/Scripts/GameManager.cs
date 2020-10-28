@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 	{
         GameOverCheck = true;
         PlayerStats.Score += PlayerStats.Money;
-        WinUI.SetActive(true);
+        WinUI.GetComponent<Win>().StopTime();
         PlayerPrefs.SetInt("levelReached", levelUnlocked);
     }
 
