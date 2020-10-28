@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\WayPoints.cs" />
     <Compile Include="Assets\Scripts\WayPointsFly.cs" />
     <Compile Include="Assets\Scripts\Win.cs" />
+    <Compile Include="Assets\WaveUI.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Documentos Alejandro/Proyectos Personales y cursos/TOWER DEFENSE BLUETHUNDER/LightShield/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
