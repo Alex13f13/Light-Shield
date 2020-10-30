@@ -20,7 +20,7 @@ public class WaveSpawner : MonoBehaviour
     public GameManager gameManager;
     public WaveUI waveUI;
 
-	public void Start()
+    public void Start()
 	{
         EnemiesAlive = 0;
     }

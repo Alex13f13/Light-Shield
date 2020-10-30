@@ -21,10 +21,15 @@ public class Enemy : MonoBehaviour
 
 	private bool isDead = false;
 
+	[Header("Sonido")]
+	public AudioSource audiosource;
+	public AudioClip DieSound;
+
 	void Start()
 	{
 		speed = Startspeed;
 		health = Starthealth;
+		audiosource = GameObject.Find("EnemyDIE").GetComponent<AudioSource>();
 	}
 
 	#region Funciones	
@@ -49,6 +54,8 @@ public class Enemy : MonoBehaviour
 	void Die()
 	{
 		isDead = true;
+
+		audiosource.PlayOneShot(DieSound);
 
 		PlayerStats.Money += GiveMoney;
 		PlayerStats.Score += GiveScore;

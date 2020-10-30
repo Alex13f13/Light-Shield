@@ -10,6 +10,12 @@ public class Tower : MonoBehaviour
 
 	public float range = 15f;
 
+	[Header("Sonido")]
+	public AudioSource audiosource;
+	public AudioClip[] ShotSound;
+	public int randomINT;
+	public bool LaserSound;
+
 	[Header("Uso de las Balas")]
 	public GameObject bulletPrefab;
 	public float FireRate = 1f;
@@ -30,14 +36,11 @@ public class Tower : MonoBehaviour
 	public Transform partRotate, firePoint;
 	public float rotateSpeed = 10f;
 
-	//public List<GameObject> vfx = new List<GameObject>();
-	//private GameObject effectToSpawn;
 
 	void Start()
     {
-		//effectToSpawn = vfx[0];
-
 		InvokeRepeating("UpdateTarget", 0f, 0.5f);
+		audiosource = this.gameObject.GetComponent<AudioSource>();
     }
 
     void UpdateTarget()
@@ -78,6 +81,7 @@ public class Tower : MonoBehaviour
 					lineRenderer.enabled = false;
 					impactEffect.Stop();
 					impactLight.enabled = false;
+					LaserSound = true;
 				}
 			}
             return;
@@ -88,6 +92,12 @@ public class Tower : MonoBehaviour
 		if (useLaser)
 		{
 			Laser();
+			if (LaserSound)
+			{
+				randomINT = Random.Range(0, ShotSound.Length);
+				audiosource.PlayOneShot(ShotSound[randomINT]);
+				LaserSound = false;
+			}
 		}
 		else
 		{
@@ -144,7 +154,8 @@ public class Tower : MonoBehaviour
 
 	void Shoot()
 	{
-		//GameObject VFX = Instantiate(effectToSpawn, firePoint.position, firePoint.rotation);
+		randomINT = Random.Range(0, ShotSound.Length);
+		audiosource.PlayOneShot(ShotSound[randomINT]);
 
 		GameObject bulletGO = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 		Bullet bullet = bulletGO.GetComponent<Bullet>();

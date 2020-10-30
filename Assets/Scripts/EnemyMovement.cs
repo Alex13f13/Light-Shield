@@ -12,9 +12,13 @@ public class EnemyMovement : MonoBehaviour
 
 	public Transform EnemyRotate;
 
+	public AudioSource audiosource;
+	public AudioClip WaveSound;
+
 	void Start()
     {
 		enemy = GetComponent<Enemy>();
+		audiosource = GameObject.Find("END").GetComponent<AudioSource>();
 
 		if (enemy.gameObject.tag == "EnemyFly")
 		{
@@ -67,6 +71,7 @@ public class EnemyMovement : MonoBehaviour
 
 	void EndPath()
 	{
+		audiosource.PlayOneShot(WaveSound);
 		PlayerStats.Lives--;
 		WaveSpawner.EnemiesAlive--;
 		Destroy(gameObject);
