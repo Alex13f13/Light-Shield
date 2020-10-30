@@ -1135,6 +1135,7 @@ MonoBehaviour:
   - {fileID: 599512841}
   - {fileID: 1567083671}
   - {fileID: 1488754472}
+  MusicToDestroy: {fileID: 0}
 --- !u!4 &536559092
 Transform:
   m_ObjectHideFlags: 0
