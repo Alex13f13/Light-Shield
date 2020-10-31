@@ -18,7 +18,21 @@ public class Options : MonoBehaviour
 
     public GameObject MusicToDestroy;
 
+    public Slider VolumenSD;
+    public Dropdown GraficsDw;
+
+	public void Start()
+	{
+        Playerprefs();
+    }
+
     #region Funciones
+
+    public void Playerprefs()
+	{
+        VolumenSD.value = PlayerPrefs.GetFloat("VolumenPrefs", 0);
+        GraficsDw.value = PlayerPrefs.GetInt("GraficosPrefs", 1);
+    }
 
     public void Exit()
     {
@@ -30,20 +44,27 @@ public class Options : MonoBehaviour
     public void SetVolume(float volume)
 	{
         audioMixer.SetFloat("volume", volume);
-	}
+
+        PlayerPrefs.SetFloat("VolumenPrefs", volume);
+    }
 
     public void SetGraphics()
 	{
         int graphicsIndex = Graphics.GetComponent<Dropdown>().value;
         GraphicsSettings.renderPipelineAsset = AssetsPipeLine[graphicsIndex];
-        //QualitySettings.SetQualityLevel(qualityIndex);
+
+        PlayerPrefs.SetInt("GraficosPrefs", graphicsIndex);
 	}
 
 	public void ResetAllGame()
 	{
-		PlayerPrefs.DeleteKey("levelReached");
-		Debug.Log("Todo eliminado jefe");
-	}
+        PlayerPrefs.DeleteAll();
+        Playerprefs();
+        SetVolume(VolumenSD.value);
+        SetGraphics();
+        Debug.Log("Todo eliminado jefe");
+        Exit();
+    }
 
 	#endregion
 }

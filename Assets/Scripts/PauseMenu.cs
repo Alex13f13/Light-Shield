@@ -34,11 +34,11 @@ public class PauseMenu : MonoBehaviour
 		if (ui.activeSelf)
 		{
             Time.timeScale = 0f;
-		}
+        }
 		else
 		{
             Time.timeScale = 1f;
-		}
+        }
 	}
 
     public void Retry()
