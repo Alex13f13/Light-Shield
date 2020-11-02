@@ -36,14 +36,14 @@ public class NodeUI : MonoBehaviour
         {
             upgradeCost.text = target.turretBlueprint.upgradeCost + "€";
             upgradeButton.interactable = true;
+            sellCost.text = target.turretBlueprint.GetSellMoney() + "€";
         }
 		else
 		{
             upgradeCost.text = "DONE";
             upgradeButton.interactable = false;
+            sellCost.text = target.turretBlueprint.GetSellMoneyUpgraded() + "€";
         }
-
-        sellCost.text = target.turretBlueprint.GetSellMoney() + "€";
 
         uiGO.SetActive(true);
 

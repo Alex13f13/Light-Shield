@@ -111,7 +111,7 @@ MonoBehaviour:
   range: 30
   audiosource: {fileID: 0}
   ShotSound:
-  - {fileID: 8300000, guid: 859550c908a706946b981773bf9ffe64, type: 3}
+  - {fileID: 8300000, guid: d5c74be645b76e04e9558a68722fe875, type: 3}
   randomINT: 0
   LaserSound: 0
   bulletPrefab: {fileID: 6323393849692296177, guid: 7ffc41941769ad7438cc386c1d308b6d,
