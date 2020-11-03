@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverUI;
     public GameObject WinUI;
 
+    public GameObject audiosource;
+
     public CameraController cameraController;
 
     public int levelUnlocked;
@@ -40,15 +42,17 @@ public class GameManager : MonoBehaviour
 
     void EndGame()
 	{
-        GameOverCheck = true;        
+        GameOverCheck = true;
+        audiosource.SetActive(false);
         GameOverUI.GetComponent<GameOver>().StopTime();
     }
 
     public void WinLevel()
 	{
         GameOverCheck = true;
+        audiosource.SetActive(false);
         PlayerStats.Score += PlayerStats.Money;
-        WinUI.SetActive(true);
+        WinUI.GetComponent<Win>().StopTime();
         PlayerPrefs.SetInt("levelReached", levelUnlocked);
     }
 

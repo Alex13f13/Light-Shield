@@ -7,6 +7,7 @@ public class NodeUI : MonoBehaviour
 {
     private Node target;
     public GameObject uiGO;
+    public GameObject[] Selecteds;
     public Button upgradeButton;
 
     public Text sellCost;
@@ -35,16 +36,21 @@ public class NodeUI : MonoBehaviour
         {
             upgradeCost.text = target.turretBlueprint.upgradeCost + "€";
             upgradeButton.interactable = true;
+            sellCost.text = target.turretBlueprint.GetSellMoney() + "€";
         }
 		else
 		{
             upgradeCost.text = "DONE";
             upgradeButton.interactable = false;
+            sellCost.text = target.turretBlueprint.GetSellMoneyUpgraded() + "€";
         }
 
-        sellCost.text = target.turretBlueprint.GetSellMoney() + "€";
-
         uiGO.SetActive(true);
+
+		for (int i = 0; i < Selecteds.Length; i++)
+		{
+            Selecteds[i].SetActive(false);
+        }        
 	}
 
     public void Hide()

@@ -18,8 +18,9 @@ public class WaveSpawner : MonoBehaviour
     private int WaveIndex = 0;
 
     public GameManager gameManager;
+    public WaveUI waveUI;
 
-	public void Start()
+    public void Start()
 	{
         EnemiesAlive = 0;
     }
@@ -54,8 +55,8 @@ public class WaveSpawner : MonoBehaviour
     #region Funciones
 
     IEnumerator SpawnWave()
-	{
-        //PlayerStats.Rounds++;
+	{                
+        waveUI.ResetArray();
 
         Wave wave = waves[WaveIndex];
 

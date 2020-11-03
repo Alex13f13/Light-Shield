@@ -216,6 +216,8 @@ MonoBehaviour:
   DeathEffect: {fileID: 7539603234813088958, guid: f610a5e8deca4074080423b8bbd7f15f,
     type: 3}
   healthbar: {fileID: 1922830710177106821}
+  audiosource: {fileID: 0}
+  DieSound: {fileID: 8300000, guid: 412b0b23eb0d96345aff57d2aede77ee, type: 3}
 --- !u!114 &5582985730853285311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyRotate: {fileID: 7187730114243899756}
+  audiosource: {fileID: 0}
+  WaveSound: {fileID: 8300000, guid: f9419c49c78c12f4fa295642edb83d70, type: 3}
 --- !u!1 &2736397627452601781
 GameObject:
   m_ObjectHideFlags: 0

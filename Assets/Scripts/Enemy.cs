@@ -21,10 +21,15 @@ public class Enemy : MonoBehaviour
 
 	private bool isDead = false;
 
+	[Header("Sonido")]
+	public AudioSource audiosource;
+	public AudioClip DieSound;
+
 	void Start()
 	{
 		speed = Startspeed;
 		health = Starthealth;
+		audiosource = GameObject.Find("EnemyDIE").GetComponent<AudioSource>();
 	}
 
 	#region Funciones	
@@ -50,10 +55,12 @@ public class Enemy : MonoBehaviour
 	{
 		isDead = true;
 
+		audiosource.PlayOneShot(DieSound);
+
 		PlayerStats.Money += GiveMoney;
 		PlayerStats.Score += GiveScore;
 
-		GameObject effect = /*(GameObject) */Instantiate(DeathEffect, transform.position, Quaternion.identity);
+		GameObject effect = Instantiate(DeathEffect, transform.position, Quaternion.identity);
 		Destroy(effect, 5f);
 
 		WaveSpawner.EnemiesAlive--;
