@@ -31939,14 +31939,12 @@ MonoBehaviour:
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     count: 1
-    rateToNextEnemy: 2
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
     count: 3
-    rateToNextEnemy: 2
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
@@ -31954,7 +31952,6 @@ MonoBehaviour:
     - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
     - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
     count: 5
-    rateToNextEnemy: 2
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
@@ -31964,7 +31961,6 @@ MonoBehaviour:
     - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
     - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
     count: 7
-    rateToNextEnemy: 2
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
@@ -31977,7 +31973,6 @@ MonoBehaviour:
     - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
     - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
     count: 10
-    rateToNextEnemy: 2
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
@@ -31990,7 +31985,7 @@ MonoBehaviour:
     - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
     - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
     count: 12
-    rateToNextEnemy: 2
+  rateToNextEnemy: 2
   SpawnPoint: {fileID: 391045479}
   TimeBetweenWaves: 1
   WaveCountDownText: {fileID: 1376771446}
