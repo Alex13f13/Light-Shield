@@ -73,6 +73,7 @@ public class EnemyMovement : MonoBehaviour
 	{
 		audiosource.PlayOneShot(WaveSound);
 		PlayerStats.Lives--;
+		PlayerStats.Score -= 500;
 		WaveSpawner.EnemiesAlive--;
 		Destroy(gameObject);
 	}
