@@ -7,6 +7,8 @@ public class RoundsSurvied : MonoBehaviour
 {
     public Text ScoreText;
 
+    public GameObject Stars;
+
     #region Funciones
 
     void OnEnable()
@@ -31,8 +33,9 @@ public class RoundsSurvied : MonoBehaviour
                 ScoreText.text = score.ToString();
                 yield return new WaitForSecondsRealtime(0.01f);
             }
-        }       
-	}
+        }
+        Stars.SetActive(true);
+    }
 
     #endregion
 }

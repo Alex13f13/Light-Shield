@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
 
     public int levelUnlocked;
 
+    public int Stars1;
+    public int Stars2;
+    public int Stars3;
+
     void Start()
     {
         GameOverCheck = false;
@@ -52,8 +56,40 @@ public class GameManager : MonoBehaviour
         GameOverCheck = true;
         audiosource.SetActive(false);
         PlayerStats.Score += PlayerStats.Money;
+        if(PlayerStats.Score >= Stars3)
+		{
+            PlayerStats.StarsAmount = 3;
+        }
+        else if (PlayerStats.Score >= Stars2)
+        {
+            PlayerStats.StarsAmount = 2;
+        }
+        else if (PlayerStats.Score >= Stars1)
+        {
+            PlayerStats.StarsAmount = 1;
+        }
         WinUI.GetComponent<Win>().StopTime();
         PlayerPrefs.SetInt("levelReached", levelUnlocked);
+		if (PlayerStats.StarsAmount < GetStar(levelUnlocked - 1))
+		{
+            return;
+		}
+        SetStar(levelUnlocked - 1, PlayerStats.StarsAmount);
+    }
+
+    private void SetStar(int Level, int starAmount)
+    {
+        PlayerPrefs.SetInt(GetKey(Level), starAmount);
+    }
+
+    private string GetKey(int Level)
+    {
+        return "Level_" + Level + "_Star";
+    }
+
+    private int GetStar(int Level)
+    {
+        return PlayerPrefs.GetInt(GetKey(Level));
     }
 
     #endregion

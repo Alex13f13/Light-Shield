@@ -14,6 +14,9 @@ public class PlayerStats : MonoBehaviour
     public static int Score;
     public int score;
 
+    public static int StarsAmount;
+    public int starsAmount;
+
     void Start()
     {
         Money = StartMoney;
@@ -21,9 +24,11 @@ public class PlayerStats : MonoBehaviour
 
         Rounds = 0;
         Score = 0;
+        StarsAmount = 0;
     }
 	void Update()
 	{
         score = Score;
+        starsAmount = StarsAmount;
     }
 }
