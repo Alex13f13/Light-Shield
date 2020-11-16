@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Stars : MonoBehaviour
 {
+    public AudioClip[] PiuAUS;
+    public AudioSource audiosource;
 
     public Sprite[] StarsGame;
     public Image StarsImage;
@@ -48,6 +50,7 @@ public class Stars : MonoBehaviour
         {
             while (stars < PlayerStats.StarsAmount)
             {
+                audiosource.PlayOneShot(PiuAUS[stars]);
                 stars++;
                 SetStartSprite(stars, StarsImage);
                 yield return new WaitForSecondsRealtime(0.7f);

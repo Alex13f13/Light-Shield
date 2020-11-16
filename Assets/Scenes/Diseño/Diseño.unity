@@ -17241,7 +17241,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -17256,7 +17256,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -30023,7 +30023,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -30038,7 +30038,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -33501,7 +33501,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -33516,7 +33516,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -34892,7 +34892,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -34907,7 +34907,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -36315,7 +36315,6 @@ MonoBehaviour:
   WinUI: {fileID: 18067972}
   audiosource: {fileID: 1614510885}
   cameraController: {fileID: 963194229}
-  Thislevel: 1
   levelUnlocked: 2
   Stars1: 200
   Stars2: 500
@@ -37648,7 +37647,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -46306,6 +46305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Win
       objectReference: {fileID: 0}
+    - target: {fileID: 5353524346741891273, guid: b1be2388d272fdf469306d0e02a46eb6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5353524346741891272, guid: b1be2388d272fdf469306d0e02a46eb6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46416,6 +46420,21 @@ PrefabInstance:
       propertyPath: fundido
       value: 
       objectReference: {fileID: 3117787368540768830}
+    - target: {fileID: 5353524345069534163, guid: b1be2388d272fdf469306d0e02a46eb6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353524345069534191, guid: b1be2388d272fdf469306d0e02a46eb6,
+        type: 3}
+      propertyPath: volumePiu.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353524345069534191, guid: b1be2388d272fdf469306d0e02a46eb6,
+        type: 3}
+      propertyPath: volumePiu.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1be2388d272fdf469306d0e02a46eb6, type: 3}
 --- !u!33 &5995993312139045586
