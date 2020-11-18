@@ -8,19 +8,23 @@ public class LevelSelector : MonoBehaviour
 
     public Button[] levelbuttons;
 
+    public Sprite[] Stars;
+
     public GameObject MusicToDestroy;
 
     void Start()
     {
-        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        int levelReached = PlayerPrefs.GetInt("levelReached", 1);       
 
-		for (int i = 0; i < levelbuttons.Length; i++)
+        for (int i = 0; i < levelbuttons.Length; i++)
 		{
 			if (i + 1 > levelReached)
 			{
                 levelbuttons[i].interactable = false;
-            }            
-		}
+                
+            }
+            levelbuttons[i].GetComponent<BotonesFunciones>().starsAmount = GetStar(i + 1); 
+        }
     }
 
     void Update()
@@ -36,6 +40,39 @@ public class LevelSelector : MonoBehaviour
         Destroy(MusicToDestroy);
         fundido.FadeTo(levelName);
 	}
+
+    public Sprite SetStartSprite(int starAmount, Image image)
+	{
+		switch (starAmount)
+		{
+            case 0:
+                image.sprite = Stars[starAmount];
+                break;
+            
+            case 1:
+                image.sprite = Stars[starAmount];
+                break;
+
+            case 2:
+                image.sprite = Stars[starAmount];
+                break;
+
+            case 3:
+                image.sprite = Stars[starAmount];
+                break;
+        }
+        return image.sprite;
+    }
+
+    private string GetKey(int Level)
+    {
+        return "Level_"+Level+"_Star";
+    }
+
+    private int GetStar(int Level)
+    {
+        return PlayerPrefs.GetInt(GetKey(Level));
+    }
 
     #endregion
 }

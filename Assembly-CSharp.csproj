@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bontones.cs" />
+    <Compile Include="Assets\Scripts\BotonesFunciones.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\RoundsSurvied.cs" />
     <Compile Include="Assets\Scripts\Shop.cs" />
+    <Compile Include="Assets\Scripts\Stars.cs" />
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\TurretBlueprint.cs" />
     <Compile Include="Assets\Scripts\Wave.cs" />

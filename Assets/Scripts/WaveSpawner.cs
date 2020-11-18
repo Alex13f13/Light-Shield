@@ -7,7 +7,8 @@ public class WaveSpawner : MonoBehaviour
     public static int EnemiesAlive = 0;
 
     public Wave[] waves;
- 
+    public float rateToNextEnemy;
+
     public Transform SpawnPoint;
 
     public float TimeBetweenWaves = 1f;
@@ -67,7 +68,7 @@ public class WaveSpawner : MonoBehaviour
 		{
             int RandomNumber = Random.Range(0, wave.enemy.Length);
             SpawnEnemy(wave.enemy[RandomNumber]);
-            yield return new WaitForSeconds(1f / wave.rateToNextEnemy);
+            yield return new WaitForSeconds(1f / rateToNextEnemy);
         }
         
         WaveIndex++;		

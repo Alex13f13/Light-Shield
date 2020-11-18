@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068803361e5afc342a1f74202dbb7c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 35
+  range: 40
   audiosource: {fileID: 0}
   ShotSound:
   - {fileID: 8300000, guid: 2e0cf817936a1b8419335cf02dec0ce2, type: 3}

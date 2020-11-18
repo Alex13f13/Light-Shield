@@ -333,6 +333,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.8301887
       objectReference: {fileID: 0}
+    - target: {fileID: 2848000982195430857, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b99a5d8a441d124da07ba8ac0a0274f, type: 3}
 --- !u!224 &130485174 stripped
@@ -1135,6 +1140,11 @@ MonoBehaviour:
   - {fileID: 599512841}
   - {fileID: 1567083671}
   - {fileID: 1488754472}
+  Stars:
+  - {fileID: 21300000, guid: b2e15d0678729c948b33cbf693225ee2, type: 3}
+  - {fileID: 21300000, guid: ffd1d7b592d84c54c903ad451864ef00, type: 3}
+  - {fileID: 21300000, guid: d803a13052d947145938fcf9a79c8f9a, type: 3}
+  - {fileID: 21300000, guid: a72c66382c38c3b4198854462ec00e19, type: 3}
   MusicToDestroy: {fileID: 0}
 --- !u!4 &536559092
 Transform:
@@ -2324,6 +2334,16 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.8301887
       objectReference: {fileID: 0}
+    - target: {fileID: 2848000982195430859, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942134887560433217, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b99a5d8a441d124da07ba8ac0a0274f, type: 3}
 --- !u!224 &1520470463 stripped
@@ -3328,6 +3348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848000982195430859, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b99a5d8a441d124da07ba8ac0a0274f, type: 3}

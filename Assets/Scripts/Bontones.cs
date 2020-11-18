@@ -15,7 +15,7 @@ public class Bontones : MonoBehaviour
         button.onClick.AddListener(PlaySound);
     }
 
-    public void PlaySound()
+	public void PlaySound()
     {
         randomINT = Random.Range(0, BotonAUS.Length);
         audiosource.PlayOneShot(BotonAUS[randomINT]);

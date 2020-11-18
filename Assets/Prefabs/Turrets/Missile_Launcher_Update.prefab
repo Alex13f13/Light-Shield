@@ -196,7 +196,7 @@ MonoBehaviour:
   LaserSound: 0
   bulletPrefab: {fileID: 6323393849692296177, guid: 7ac9198948b9d4f4fa34716646fe2bcb,
     type: 3}
-  FireRate: 0.5
+  FireRate: 0.35
   useLaser: 0
   lineRenderer: {fileID: 0}
   impactEffect: {fileID: 0}

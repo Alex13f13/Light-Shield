@@ -287,7 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Startspeed: 20
   speed: 10
-  GiveMoney: 15
+  GiveMoney: 50
   GiveScore: 250
   Starthealth: 75
   DeathEffect: {fileID: 7539603234813088958, guid: fa080e8daea2d644f880fe14e442e88f,
