@@ -51,5 +51,11 @@ public class Win : MonoBehaviour
         fundido.FadeTo(MenuSceneName);
     }
 
+    public void FinishGame()
+    {
+        StopTime();
+        fundido.FadeTo(MenuSceneName);//Escena de céditos
+    }
+
     #endregion
 }

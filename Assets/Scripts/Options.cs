@@ -16,7 +16,7 @@ public class Options : MonoBehaviour
     public RenderPipelineAsset[] AssetsPipeLine;
     public GameObject Graphics;
 
-    public GameObject MusicToDestroy;
+    //public GameObject MusicToDestroy;
 
     public Slider VolumenSD;
     public Dropdown GraficsDw;
@@ -36,8 +36,8 @@ public class Options : MonoBehaviour
 
     public void Exit()
     {
-        MusicToDestroy = GameObject.Find("Music");
-        Destroy(MusicToDestroy);
+        //MusicToDestroy = GameObject.Find("Music");
+        //Destroy(MusicToDestroy);
         fundido.FadeTo(LeveltoLoad);
     }
 

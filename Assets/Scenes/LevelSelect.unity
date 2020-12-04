@@ -1146,6 +1146,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d803a13052d947145938fcf9a79c8f9a, type: 3}
   - {fileID: 21300000, guid: a72c66382c38c3b4198854462ec00e19, type: 3}
   MusicToDestroy: {fileID: 0}
+  AllStars: 0
 --- !u!4 &536559092
 Transform:
   m_ObjectHideFlags: 0
@@ -1182,7 +1183,7 @@ PrefabInstance:
     - target: {fileID: 2848000982360470621, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
         type: 3}
       propertyPath: m_Name
-      value: LevelBotton (10)
+      value: FinishLevel
       objectReference: {fileID: 0}
     - target: {fileID: 2848000982360470611, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
         type: 3}
@@ -1318,17 +1319,52 @@ PrefabInstance:
     - target: {fileID: 2848000982195430857, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
         type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.8925773
       objectReference: {fileID: 0}
     - target: {fileID: 2848000982195430857, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.8042059
+      value: 0.9150943
       objectReference: {fileID: 0}
     - target: {fileID: 2848000982195430857, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.8301887
+      value: 0.012949424
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848000982195430859, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848000982360470610, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848000982360470610, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9183841
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848000982360470610, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7541164168346991894, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7541164168346991894, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.79682547
+      objectReference: {fileID: 0}
+    - target: {fileID: 7541164168346991894, guid: 8b99a5d8a441d124da07ba8ac0a0274f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b99a5d8a441d124da07ba8ac0a0274f, type: 3}
