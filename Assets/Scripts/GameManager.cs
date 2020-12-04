@@ -69,7 +69,10 @@ public class GameManager : MonoBehaviour
             PlayerStats.StarsAmount = 1;
         }
         WinUI.GetComponent<Win>().StopTime();
-        PlayerPrefs.SetInt("levelReached", levelUnlocked);
+		if (levelUnlocked < 11 && PlayerPrefs.GetInt("levelReached") < levelUnlocked)
+		{
+            PlayerPrefs.SetInt("levelReached", levelUnlocked);
+        }
 		if (PlayerStats.StarsAmount < GetStar(levelUnlocked - 1))
 		{
             return;

@@ -12,6 +12,8 @@ public class LevelSelector : MonoBehaviour
 
     public GameObject MusicToDestroy;
 
+    public int AllStars;
+
     void Start()
     {
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);       
@@ -20,10 +22,14 @@ public class LevelSelector : MonoBehaviour
 		{
 			if (i + 1 > levelReached)
 			{
-                levelbuttons[i].interactable = false;
-                
+                levelbuttons[i].interactable = false;                
             }
-            levelbuttons[i].GetComponent<BotonesFunciones>().starsAmount = GetStar(i + 1); 
+            levelbuttons[i].GetComponent<BotonesFunciones>().starsAmount = GetStar(i + 1);
+            AllStars += GetStar(i + 1);           
+        }
+        if (AllStars >= 30)
+        {
+            levelbuttons[10].interactable = true;
         }
     }
 
