@@ -36252,13 +36252,92 @@ MonoBehaviour:
   waves:
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
-    count: 2
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 8
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
-    count: 5
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 9
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
     count: 10
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 10
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 11
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 12
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 12
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 14
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 14
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 37531155049d42244b7bee705c5ea015, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 0a0524d0dde481b4abd2f0b1c1551398, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 16
   rateToNextEnemy: 2
   SpawnPoint: {fileID: 391045479}
   TimeBetweenWaves: 2
@@ -36294,7 +36373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25eb92b6f5befa64da9fda8b43fa27f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartMoney: 4000
+  StartMoney: 475
   StartLives: 20
   score: 0
   starsAmount: 0
@@ -36315,9 +36394,9 @@ MonoBehaviour:
   audiosource: {fileID: 1614510885}
   cameraController: {fileID: 963194229}
   levelUnlocked: 8
-  Stars1: 200
-  Stars2: 500
-  Stars3: 1000
+  Stars1: 9700
+  Stars2: 10600
+  Stars3: 11400
 --- !u!114 &1748416483
 MonoBehaviour:
   m_ObjectHideFlags: 0

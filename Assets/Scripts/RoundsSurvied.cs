@@ -9,6 +9,8 @@ public class RoundsSurvied : MonoBehaviour
 
     public GameObject Stars;
 
+    public bool win;
+
     #region Funciones
 
     void OnEnable()
@@ -19,22 +21,25 @@ public class RoundsSurvied : MonoBehaviour
     IEnumerator AnimatedText()
 	{
         ScoreText.text = "0";
-        int score = PlayerStats.Score;
+        int score = PlayerStats.StarsScore;
         yield return new WaitForSecondsRealtime(0.7f);
-        if (PlayerStats.Score > 0)
+        if (PlayerStats.StarsScore > 0)
         {
-            if (PlayerStats.Score >= 50)
+            if (PlayerStats.StarsScore >= 50)
             {
                 score = score - 50;
             }
-            while (score < PlayerStats.Score)
+            while (score < PlayerStats.StarsScore)
             {
                 score++;
                 ScoreText.text = score.ToString();
                 yield return new WaitForSecondsRealtime(0.01f);
             }
         }
-        Stars.SetActive(true);
+		if (win)
+		{
+            Stars.SetActive(true);
+        }       
     }
 
     #endregion
