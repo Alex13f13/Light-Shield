@@ -9,6 +9,8 @@ public class RoundsSurvied : MonoBehaviour
 
     public GameObject Stars;
 
+    public bool win;
+
     #region Funciones
 
     void OnEnable()
@@ -34,7 +36,10 @@ public class RoundsSurvied : MonoBehaviour
                 yield return new WaitForSecondsRealtime(0.01f);
             }
         }
-        Stars.SetActive(true);
+		if (win)
+		{
+            Stars.SetActive(true);
+        }       
     }
 
     #endregion

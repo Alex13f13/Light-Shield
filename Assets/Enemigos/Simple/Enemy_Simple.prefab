@@ -318,6 +318,7 @@ MonoBehaviour:
   speed: 10
   GiveMoney: 25
   GiveScore: 100
+  GiveScoreToStars: 100
   Starthealth: 100
   DeathEffect: {fileID: 7539603234813088958, guid: 9cb2ef779a026734eaa4e51b7bcd328a,
     type: 3}

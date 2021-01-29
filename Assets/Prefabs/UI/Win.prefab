@@ -998,6 +998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 5353524345651207157}
   Stars: {fileID: 5353524345069534163}
+  win: 1
 --- !u!1 &5353524346164310147
 GameObject:
   m_ObjectHideFlags: 0

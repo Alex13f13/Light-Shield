@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
 
 	public int GiveMoney = 50;
 	public int GiveScore;
+	public int GiveScoreToStars;
 
 	public float Starthealth = 100;
 	private float health;
@@ -59,6 +60,7 @@ public class Enemy : MonoBehaviour
 
 		PlayerStats.Money += GiveMoney;
 		PlayerStats.Score += GiveScore;
+		PlayerStats.StarsScore += GiveScoreToStars;
 
 		GameObject effect = Instantiate(DeathEffect, transform.position, Quaternion.identity);
 		Destroy(effect, 5f);

@@ -4102,7 +4102,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 14c355aa54823a043a392bee2750faa7, type: 2}
   - {fileID: 11400000, guid: 3860ade8463d5cc4a8bff922c6483ec6, type: 2}
   Graphics: {fileID: 1219142916}
-  MusicToDestroy: {fileID: 0}
   VolumenSD: {fileID: 1155098923}
   GraficsDw: {fileID: 1219142918}
 --- !u!1001 &165743634
@@ -30905,10 +30904,19 @@ MonoBehaviour:
   waves:
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
-    count: 2
+    count: 4
   - enemy:
     - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
-    count: 5
+    count: 8
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    count: 10
+  - enemy:
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 200941509bfeaa34b86eacf71f67f233, type: 3}
+    - {fileID: 2381452985638653267, guid: 9f59b2e6eb1edb14593a81a7f0ed61e4, type: 3}
+    count: 16
   rateToNextEnemy: 2
   SpawnPoint: {fileID: 391045479}
   TimeBetweenWaves: 1
@@ -30944,7 +30952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25eb92b6f5befa64da9fda8b43fa27f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartMoney: 500
+  StartMoney: 600
   StartLives: 20
   score: 0
   starsAmount: 0
@@ -30965,9 +30973,9 @@ MonoBehaviour:
   audiosource: {fileID: 1614510885}
   cameraController: {fileID: 963194229}
   levelUnlocked: 3
-  Stars1: 100
-  Stars2: 200
-  Stars3: 700
+  Stars1: 2000
+  Stars2: 2800
+  Stars3: 3500
 --- !u!114 &1748416483
 MonoBehaviour:
   m_ObjectHideFlags: 0
