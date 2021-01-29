@@ -21,15 +21,15 @@ public class RoundsSurvied : MonoBehaviour
     IEnumerator AnimatedText()
 	{
         ScoreText.text = "0";
-        int score = PlayerStats.StarsScore;
+        int score = PlayerStats.Score;
         yield return new WaitForSecondsRealtime(0.7f);
-        if (PlayerStats.StarsScore > 0)
+        if (PlayerStats.Score > 0)
         {
-            if (PlayerStats.StarsScore >= 50)
+            if (PlayerStats.Score >= 50)
             {
                 score = score - 50;
             }
-            while (score < PlayerStats.StarsScore)
+            while (score < PlayerStats.Score)
             {
                 score++;
                 ScoreText.text = score.ToString();

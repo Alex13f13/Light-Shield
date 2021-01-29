@@ -30,7 +30,6 @@ public class PlayerStats : MonoBehaviour
     }
 	//void Update()
 	//{
- //       score = Score;
- //       starsAmount = StarsAmount;
- //   }
+	//	score = StarsScore;
+	//}
 }

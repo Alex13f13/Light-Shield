@@ -56,15 +56,15 @@ public class GameManager : MonoBehaviour
         GameOverCheck = true;
         audiosource.SetActive(false);
         //PlayerStats.Score += PlayerStats.Money;
-        if(PlayerStats.Score >= Stars3)
+        if(PlayerStats.StarsScore >= Stars3)
 		{
             PlayerStats.StarsAmount = 3;
         }
-        else if (PlayerStats.Score >= Stars2)
+        else if (PlayerStats.StarsScore >= Stars2)
         {
             PlayerStats.StarsAmount = 2;
         }
-        else if (PlayerStats.Score >= Stars1)
+        else if (PlayerStats.StarsScore >= Stars1)
         {
             PlayerStats.StarsAmount = 1;
         }
