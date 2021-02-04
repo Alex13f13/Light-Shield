@@ -35129,6 +35129,21 @@ PrefabInstance:
       propertyPath: nextLevel
       value: Level11
       objectReference: {fileID: 0}
+    - target: {fileID: 5353524345069534163, guid: b1be2388d272fdf469306d0e02a46eb6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353524345069534191, guid: b1be2388d272fdf469306d0e02a46eb6,
+        type: 3}
+      propertyPath: volumePiu.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353524345069534191, guid: b1be2388d272fdf469306d0e02a46eb6,
+        type: 3}
+      propertyPath: volumePiu.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5353524344973889192, guid: b1be2388d272fdf469306d0e02a46eb6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -35154,11 +35169,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5353524345069534163, guid: b1be2388d272fdf469306d0e02a46eb6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5353524344973889189, guid: b1be2388d272fdf469306d0e02a46eb6,
         type: 3}
       propertyPath: m_Transition
@@ -35167,17 +35177,7 @@ PrefabInstance:
     - target: {fileID: 5353524344973889189, guid: b1be2388d272fdf469306d0e02a46eb6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FinishGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 5353524345069534191, guid: b1be2388d272fdf469306d0e02a46eb6,
-        type: 3}
-      propertyPath: volumePiu.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5353524345069534191, guid: b1be2388d272fdf469306d0e02a46eb6,
-        type: 3}
-      propertyPath: volumePiu.Array.data[1]
-      value: 1
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 5353524346164310173, guid: b1be2388d272fdf469306d0e02a46eb6,
         type: 3}
@@ -35212,9 +35212,7 @@ PrefabInstance:
     - target: {fileID: 5353524346164310173, guid: b1be2388d272fdf469306d0e02a46eb6,
         type: 3}
       propertyPath: m_Text
-      value: 'Finish game
-
-        thanks for playing!'
+      value: thanks for playing!
       objectReference: {fileID: 0}
     - target: {fileID: 5353524346164310173, guid: b1be2388d272fdf469306d0e02a46eb6,
         type: 3}

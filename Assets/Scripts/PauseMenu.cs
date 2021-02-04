@@ -53,5 +53,11 @@ public class PauseMenu : MonoBehaviour
         fundido.FadeTo(MenuSceneName);
     }
 
+    public void MenuFinal()
+    {
+        Debug.Log("Va");
+        fundido.FadeTo(MenuSceneName);
+    }
+
     #endregion
 }
