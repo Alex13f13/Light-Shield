@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class Tutorial : MonoBehaviour
 {
     public GameObject ui;
+    public GameObject GameManager;
 
 	private void Start()
 	{
@@ -18,6 +19,7 @@ public class Tutorial : MonoBehaviour
 	{
         Time.timeScale = 1f;
         ui.SetActive(false);
+        GameManager.GetComponent<PauseMenu>().enabled = true;
     }
 
     IEnumerator Wait()

@@ -209,7 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Startspeed: 12
   speed: 10
-  GiveMoney: 100
+  GiveMoney: 75
   GiveScore: 375
   GiveScoreToStars: 100
   Starthealth: 300

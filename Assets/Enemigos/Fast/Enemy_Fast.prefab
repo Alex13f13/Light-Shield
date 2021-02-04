@@ -290,7 +290,7 @@ MonoBehaviour:
   GiveMoney: 50
   GiveScore: 250
   GiveScoreToStars: 100
-  Starthealth: 75
+  Starthealth: 200
   DeathEffect: {fileID: 7539603234813088958, guid: fa080e8daea2d644f880fe14e442e88f,
     type: 3}
   healthbar: {fileID: 8755744758017406087}
