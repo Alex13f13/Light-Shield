@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 1188680621}
   - component: {fileID: 1188680620}
   m_Layer: 5
-  m_Name: Credits (3)
+  m_Name: Names
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 1227106871}
   - component: {fileID: 1227106870}
   m_Layer: 5
-  m_Name: Credits
+  m_Name: Developer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,7 +697,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Debeloper
+  m_Text: Developer
 --- !u!222 &1227106872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 1337439147}
   - component: {fileID: 1337439146}
   m_Layer: 5
-  m_Name: Credits (1)
+  m_Name: Alejandro Feijoo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 1433284128}
   - component: {fileID: 1433284127}
   m_Layer: 5
-  m_Name: Credits (4)
+  m_Name: Thanks for playing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 1838791064}
   - component: {fileID: 1838791063}
   m_Layer: 5
-  m_Name: Credits (2)
+  m_Name: SpecialThanks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

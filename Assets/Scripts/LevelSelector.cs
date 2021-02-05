@@ -30,6 +30,7 @@ public class LevelSelector : MonoBehaviour
         if (AllStars >= 30)
         {
             levelbuttons[10].interactable = true;
+            levelbuttons[10].GetComponent<BotonesFunciones>().starsAmount = GetStar(10 + 1);
         }
     }
 
