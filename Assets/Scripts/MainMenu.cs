@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Audio;
+using UnityEngine.Rendering;
 
 public class MainMenu : MonoBehaviour
 {
@@ -9,12 +12,22 @@ public class MainMenu : MonoBehaviour
 
     public Fundido fundido;
 
+    public AudioMixer audioMixer;
+
+    public RenderPipelineAsset[] AssetsPipeLine;
+
     #region Funciones
 
+    public void Start()
+    {
+        GraphicsSettings.renderPipelineAsset = AssetsPipeLine[PlayerPrefs.GetInt("GraficosPrefs", 1)];
+        audioMixer.SetFloat("volume", PlayerPrefs.GetFloat("VolumenPrefs", 0));
+    }
+
     public void Play()
-	{
+    {
         fundido.FadeTo(LeveltoLoad);
-	}
+    }
 
     public void Options()
     {
@@ -22,9 +35,9 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Exit()
-	{
+    {
         Application.Quit();
-	}
+    }
 
     #endregion
 }

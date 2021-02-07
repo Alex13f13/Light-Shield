@@ -1601,6 +1601,7 @@ MonoBehaviour:
   ui: {fileID: 1891512715}
   fundido: {fileID: 3117787368540768830}
   MenuSceneName: MainMenu
+  final: 1
 --- !u!1001 &3117787368540768829
 PrefabInstance:
   m_ObjectHideFlags: 0

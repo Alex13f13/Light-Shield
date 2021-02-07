@@ -1325,6 +1325,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeveltoLoad: LevelSelect
   fundido: {fileID: 697675040}
+  audioMixer: {fileID: 24100000, guid: 71a0365f23084a64cb146b7b92446f99, type: 2}
+  AssetsPipeLine:
+  - {fileID: 11400000, guid: eae13401204efdb46918f8da1dc55645, type: 2}
+  - {fileID: 11400000, guid: 14c355aa54823a043a392bee2750faa7, type: 2}
+  - {fileID: 11400000, guid: 3860ade8463d5cc4a8bff922c6483ec6, type: 2}
 --- !u!4 &1484832038
 Transform:
   m_ObjectHideFlags: 0

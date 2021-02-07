@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 
     public Fundido fundido;
     public string MenuSceneName = "MainMenu";
+    public bool final;
 
     void Start()
     {
@@ -15,14 +16,17 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-		if (GameManager.GameOverCheck)
+        if (final == false)
 		{
-            return;
-		}
-		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
-		{
-            Continue();
-		}
+            if (GameManager.GameOverCheck)
+            {
+                return;
+            }
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
+            {
+                Continue();
+            }
+        }           
     }
 
     #region Funciones
@@ -49,7 +53,10 @@ public class PauseMenu : MonoBehaviour
 
     public void Menu()
     {
-        Continue();
+        if (final == false)
+        {
+            Continue();
+        }
         fundido.FadeTo(MenuSceneName);
     }
 
