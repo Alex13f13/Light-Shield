@@ -4,7 +4,7 @@ Personal project based on the "Tower defense" video game subgenre of the Strateg
 
 You will have to defend your portal preventing enemy spheres from reaching it. To do this you must use all your wits. Will you manage to reach the golden level?
 
-![Captura7](https://user-images.githubusercontent.com/46814661/140664515-e3560310-1e61-40a1-af9e-e1e6bbdfd1d2.JPG)
+![Icono2](https://user-images.githubusercontent.com/46814661/140664542-ede04d80-495a-4ef0-aae0-c9bc1c2f88f3.png)
 
 # Mobile Game for Android
 
