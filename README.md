@@ -12,4 +12,4 @@ https://play.google.com/store/apps/details?id=com.BlueThunder.LightShield
 
 # Oficial Trailer
 
-https://www.youtube.com/watch?v=RX5Rl0h_br4&t=5s
+https://youtu.be/RX5Rl0h_br4
